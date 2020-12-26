@@ -26,8 +26,16 @@ h5{
     border: 1px solid black;
     width: 1180px;
     height: 390px;
-   
+}
+.img-word-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 
+}
+svg{
+    height: 400px;
 }
 .letters-container{
     float: left;
@@ -47,6 +55,15 @@ h5{
     font-size: 28px;
     margin: 5px 5px;
    
+}
+.svg-container{
+    float: left;
+}
+.secret-word-container{
+    background-color: rgb(120, 226, 134);
+    width: 800px;
+    height: 200px;
+    
 }
 .container{
    

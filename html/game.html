@@ -4,115 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HangMan Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <h5>HangMan Game</h5>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" >Home </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" >New</a>
-            </li>
-           
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">New</a>
+                </li>
+
+            </ul>
         </div>
-      </nav>
-  
-      <div class="game-container">
-          <div class="img-word-container">
-              <div class="svg-container">
-            <svg width="263" height="449" xmlns="http://www.w3.org/2000/svg">
-                <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-               
-                <g>
-                 <title>background</title>
-                 <rect x="-1" y="-1" width="265" height="451" id="canvas_background" fill="#fff"/>
-                 <g id="canvasGrid" display="none">
-                  <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
-                 </g>
-                </g>
-                <g>
-                 <title>Layer 1</title>
-                 <!--hanger-->
-                 <rect stroke="#000000" id="svg_5" height="2" width="99" y="336.46922" x="17.10845" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
-                 <rect stroke="#000000" id="svg_6" height="247" width="3" y="87.46923" x="64.10845" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
-                 <rect id="svg_7" height="0" width="8" y="157.46923" x="69.10845" stroke-opacity="null" stroke-width="1.5" stroke="#000000" fill="#000000"/>
-                 <rect id="svg_8" height="2" width="97" y="85.46923" x="65.10845" stroke-opacity="null" stroke-width="1.5" stroke="#000000" fill="#000000"/>
-                 <rect id="svg_9" height="35" width="3" y="86.46923" x="159.10845" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000000" fill="#000000"/>
-                 <!--hanger-->
+    </nav>
+
+    <div class="game-container">
+        <div class="img-word-container">
+            <div class="svg-container">
+                <svg width="263" height="449" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+                    <g>
+                        <title>background</title>
+                        <rect x="-1" y="-1" width="265" height="451" id="canvas_background" fill="#fff" />
+                        <g id="canvasGrid" display="none">
+                            <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0"
+                                fill="url(#gridpattern)" />
+                        </g>
+                    </g>
+                    <g>
+                        <title>Layer 1</title>
+                        <!--hanger-->
+                        <rect stroke="#000000" id="svg_5" height="2" width="99" y="336.46922" x="17.10845"
+                            stroke-opacity="null" stroke-width="1.5" fill="#000000" />
+                        <rect stroke="#000000" id="svg_6" height="247" width="3" y="87.46923" x="64.10845"
+                            stroke-opacity="null" stroke-width="1.5" fill="#000000" />
+                        <rect id="svg_7" height="0" width="8" y="157.46923" x="69.10845" stroke-opacity="null"
+                            stroke-width="1.5" stroke="#000000" fill="#000000" />
+                        <rect id="svg_8" height="2" width="97" y="85.46923" x="65.10845" stroke-opacity="null"
+                            stroke-width="1.5" stroke="#000000" fill="#000000" />
+                        <rect id="svg_9" height="35" width="3" y="86.46923" x="159.10845" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="1.5" stroke="#000000" fill="#000000" />
+                        <!--hanger-->
 
 
-                 <!---Head-->
-                 <ellipse stroke="#bf0000" ry="28.5" rx="29" id="svg_10" cy="144.96923" cx="162.10845" stroke-width="4" fill="#ffffff"/>
-                  
+                        <!---Head-->
+                        <ellipse stroke="#bf0000" ry="28.5" rx="29" id="svg_10" cy="144.96923" cx="162.10845"
+                            stroke-width="4" fill="#ffffff" />
 
-                  <!--Body-->
-                 <rect stroke="#bf0000" id="svg_12" height="75.99999" width="3" y="174.46923" x="162.10845" stroke-width="1.5" fill="#bf0000"/>
-                  
 
-                  <!--Right hand-->
-                 <rect stroke="#bf0000" transform="rotate(38.30325698852539 184.62823486328128,218.81422424316406) " id="svg_13" height="2.51816" width="52.90417" y="217.55514" x="158.17616" stroke-width="1.5" fill="#bf0000"/>
-                 
+                        <!--Body-->
+                        <rect stroke="#bf0000" id="svg_12" height="75.99999" width="3" y="174.46923" x="162.10845"
+                            stroke-width="1.5" fill="#bf0000" />
 
-                 <!--Left hand-->
-                 <rect stroke="#bf0000" transform="rotate(133.08865356445312 146.44004821777344,219.75680541992188) " id="svg_14" height="2.48867" width="49.25044" y="218.51247" x="121.81482" stroke-width="1.5" fill="#bf0000"/>
-                 
 
-                 <!--Right leg -->
-                 <rect stroke="#bf0000" transform="rotate(45.65589904785156 186.20304870605472,271.9692077636719) " id="svg_15" height="2.87833" width="59.09645" y="270.53004" x="156.65484" stroke-width="1.5" fill="#bf0000"/>
-                 
-                 
-                 <!---Left leg-->
-                 <rect stroke="#bf0000" transform="rotate(128.3930206298828 144.85168457031253,273.06384277343744) " id="svg_16" height="2.87833" width="59.09645" y="271.62465" x="115.30346" stroke-width="1.5" fill="#bf0000"/>
-               
-                </g>
-               </svg>
+                        <!--Right hand-->
+                        <rect stroke="#bf0000"
+                            transform="rotate(38.30325698852539 184.62823486328128,218.81422424316406) " id="svg_13"
+                            height="2.51816" width="52.90417" y="217.55514" x="158.17616" stroke-width="1.5"
+                            fill="#bf0000" />
+
+
+                        <!--Left hand-->
+                        <rect stroke="#bf0000"
+                            transform="rotate(133.08865356445312 146.44004821777344,219.75680541992188) " id="svg_14"
+                            height="2.48867" width="49.25044" y="218.51247" x="121.81482" stroke-width="1.5"
+                            fill="#bf0000" />
+
+
+                        <!--Right leg -->
+                        <rect stroke="#bf0000"
+                            transform="rotate(45.65589904785156 186.20304870605472,271.9692077636719) " id="svg_15"
+                            height="2.87833" width="59.09645" y="270.53004" x="156.65484" stroke-width="1.5"
+                            fill="#bf0000" />
+
+
+                        <!---Left leg-->
+                        <rect stroke="#bf0000"
+                            transform="rotate(128.3930206298828 144.85168457031253,273.06384277343744) " id="svg_16"
+                            height="2.87833" width="59.09645" y="271.62465" x="115.30346" stroke-width="1.5"
+                            fill="#bf0000" />
+
+                    </g>
+                </svg>
             </div>
-            <div>
+            <div class="secret-word-container">
 
             </div>
-          </div>
-          <div class="letters-container">
-              <div class="letter">A</div>
-              <div class="letter">B</div>
-              <div class="letter">C</div>
-              <div class="letter">D</div>
-              <div class="letter">E</div>
-              <div class="letter">F</div>
-              <div class="letter">G</div>
-              <div class="letter">H</div>
-              <div class="letter">I</div>
-              <div class="letter">J</div>
-              <div class="letter">K</div>
-              <div class="letter">L</div>
-              <div class="letter">M</div>
-              <div class="letter">N</div>
-              <div class="letter">O</div>
-              <div class="letter">P</div>
-              <div class="letter">Q</div>
-              <div class="letter">R</div>
-              <div class="letter">S</div>
-              <div class="letter">T</div>
-              <div class="letter">U</div>
-              <div class="letter">V</div>
-              <div class="letter">W</div>
-              <div class="letter">X</div>
-              <div class="letter">Y</div>
-              <div class="letter">Z</div>
-          </div>
-      </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="/html/game.html"></script>
+        </div>
+        <div class="letters-container">
+            <div class="letter">A</div>
+            <div class="letter">B</div>
+            <div class="letter">C</div>
+            <div class="letter">D</div>
+            <div class="letter">E</div>
+            <div class="letter">F</div>
+            <div class="letter">G</div>
+            <div class="letter">H</div>
+            <div class="letter">I</div>
+            <div class="letter">J</div>
+            <div class="letter">K</div>
+            <div class="letter">L</div>
+            <div class="letter">M</div>
+            <div class="letter">N</div>
+            <div class="letter">O</div>
+            <div class="letter">P</div>
+            <div class="letter">Q</div>
+            <div class="letter">R</div>
+            <div class="letter">S</div>
+            <div class="letter">T</div>
+            <div class="letter">U</div>
+            <div class="letter">V</div>
+            <div class="letter">W</div>
+            <div class="letter">X</div>
+            <div class="letter">Y</div>
+            <div class="letter">Z</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
