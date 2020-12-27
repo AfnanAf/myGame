@@ -14,19 +14,34 @@
     var secretWordLength = secretWordLettersList.length;
     console.log("length "+secretWordLength);//6
 
+$(document).ready(function(){
+
 
     for(let i=0 ; i<secretWordLength ; i++){
-       var letter =  $(".secret-word-container").append("<div class='secret-letter'></div>");
-       $(".secret-letter").addClass("secret-letter");
-    }
-
-   
-    $("#A").click(function(){
-       
-            console.log( $("#A").text());
+        var letter =  $(".secret-word-container").append("<div class='secret-letter "+i+"'></div>");
+        $(".secret-letter").addClass("secret-letter");
+     }
+ 
+    
+ 
+     $(".letters-container div").click(function(){
         
-    })
-
+        
+         var id = $(this).attr('id');
+         for(letter in secretWordLettersList){
+             if(secretWordLettersList[letter] === id){
+                 $("."+letter+"").text(secretWordLettersList[letter]);
+                 
+             }else{
+                 
+                //  c.css("color","red");
+             }
+         }
+         
+     })
+ 
+})
+    
 
 
 
