@@ -16,8 +16,16 @@
 
 
     for(let i=0 ; i<secretWordLength ; i++){
-        $(".secret-word-container").append("<div>Appended item</div>");
+       var letter =  $(".secret-word-container").append("<div class='secret-letter'></div>");
+       $(".secret-letter").addClass("secret-letter");
     }
+
+   
+    $("#A").click(function(){
+       
+            console.log( $("#A").text());
+        
+    })
 
 
 
