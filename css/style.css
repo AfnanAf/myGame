@@ -119,3 +119,104 @@ input{
     width:50px;
     text-align:center;
 }
+#svg_5{
+    stroke:#000000;
+    height:2px;
+    width:99px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#000000; 
+}
+#svg_6{
+
+    stroke:#000000;
+    height:247px;
+    width:3px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#000000; 
+}
+#svg_7{
+
+    stroke:#000000;
+    height:0px;
+    width:8px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#000000; 
+}
+#svg_8{
+
+    stroke:#000000;
+    height:2px;
+    width:97px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#000000; 
+}
+
+#svg_9{
+
+    stroke:#000000;
+    height:35px;
+    width:3px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#000000; 
+}
+
+#svg_10{
+    stroke:#bf0000;
+    stroke-width:4px;
+    fill:#ffffff; 
+}
+
+#svg_12{
+
+    stroke:#bf0000;
+    height:75.99999px;
+    width:3px;
+    stroke-opacity:unset;
+    stroke-width:1.5px;
+    fill:#bf0000; 
+}
+
+#svg_13{
+
+    stroke:#bf0000;
+    height:2.51816px;
+    width:52.90417px;
+    stroke-width:1.5px;
+    fill:#bf0000; 
+    transform:rotate(38.30325698852539 184.62823486328128,218.81422424316406);
+}
+
+#svg_14{
+
+    stroke:#bf0000;
+    height:2.48867px;
+    width:49.25044px;
+    stroke-width:1.5px;
+    fill:#bf0000; 
+    transform:rotate(133.08865356445312 146.44004821777344,219.75680541992188);
+}
+
+#svg_15{
+
+    stroke:#bf0000;
+    height:2.87833px;
+    width:59.09645px;
+    stroke-width:1.5px;
+    fill:#bf0000; 
+    transform:rotate(45.65589904785156 186.20304870605472,271.9692077636719);
+}
+
+#svg_16{
+
+    stroke:#bf0000;
+    height:2.87833px;
+    width:59.09645px;
+    stroke-width:1.5px;
+    fill:#bf0000; 
+    transform:rotate(128.3930206298828 144.85168457031253,273.06384277343744);
+}
