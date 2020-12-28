@@ -13,7 +13,7 @@
     console.log("length "+secretWordLength);//6
 
 $(document).ready(function(){
-
+    var failurse = 0;
 
     for(let i=0 ; i<secretWordLength ; i++){
         var letter =  $(".secret-word-container").append("<div class='secret-letter "+i+"'></div>");
@@ -21,7 +21,7 @@ $(document).ready(function(){
    }
  
     
- var failurse = 0;
+ 
  var id=0;
      $(".letters-container div").on('click',function(){
        
@@ -37,7 +37,7 @@ $(document).ready(function(){
                 
                 
                 }
-
+                winCheck();
             
    
            }else{
@@ -106,17 +106,18 @@ $(document).ready(function(){
                        $("#svg_16").attr("transform","rotate(128.3930206298828 144.85168457031253,273.06384277343744)");
   
                    break;
-                   dafaul:break;
+                   dafaul:
+                   break;
                   
                }//switch
                
-           }//else if
-         
+           }//else 
+           winCheck();
         
-      
       
      });//click func
      
+    //  winCheck();
  function getAllIndexes(arr, val) {
         var indexes = [], i;
         for(i = 0; i < arr.length; i++)
@@ -131,6 +132,7 @@ $("#new-link").click(function(){
     var okOption = confirm("New Game?");
     if (okOption == true) {
      location.reload();
+    
     } 
 })
 
@@ -141,6 +143,24 @@ $("#home-link").click(function(){
         window.location.href = "/html/home.html";
     } 
 })
+function winCheck(){
+  
+var option;
+
+  if(failurse<7 && $(".secret-word-container").children("div:not(:empty)").length==secretWordLength){
+    option = alert("Congratulations "+window.location.search.substring(12)+" , You won!");
+            if (option == true) {
+                location.reload();
+                
+               } 
+  }else if(failurse>=7 && $(".secret-word-container").children("div:not(:empty)").length<=secretWordLength){
+    console.log(failurse);
+    option = alert("Unfortunately "+window.location.search.substring(12)+" , You lost :( ");
+    if (option == true) {
+        location.reload();
+       } 
+  }
+ }
 
     
     });//ready func

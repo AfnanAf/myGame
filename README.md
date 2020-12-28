@@ -1,5 +1,6 @@
 # myGame
 ## Technologies used:
+
 ## Wireframes:
 ![Wireframe](/images/wireframe.jpg)
 ## User stories:
