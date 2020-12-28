@@ -81,22 +81,30 @@ $(document).ready(function(){
                    $(".svg-elements-container").append("<rect id=svg_13> />");
                    $("#svg_13").attr("y",217.55514);
                    $("#svg_13").attr("x",158.17616);
+                   $("#svg_13").attr("transform","rotate(38.30325698852539 184.62823486328128,218.81422424316406)");
+
    
                    break;
                    case 5: 
                    $(".svg-elements-container").append("<rect id=svg_14> />");
                    $("#svg_14").attr("y",218.51247);
                    $("#svg_14").attr("x",121.81482);
+                   $("#svg_14").attr("transform","rotate(133.08865356445312 146.44004821777344,219.75680541992188)");
+                   
                    break;
                    case 6: 
                    $(".svg-elements-container").append("<rect id=svg_15> />");
                    $("#svg_15").attr("y",270.53004);
                    $("#svg_15").attr("x",156.65484);
+                   $("#svg_15").attr("transform","rotate(45.65589904785156 186.20304870605472,271.9692077636719)");
+
                    break;
                    case 7:
                        $(".svg-elements-container").append("<rect id=svg_16> />");
                        $("#svg_16").attr("y",271.62465);
-                       $("#svg_16").attr("x",115.30346);    
+                       $("#svg_16").attr("x",115.30346);  
+                       $("#svg_16").attr("transform","rotate(128.3930206298828 144.85168457031253,273.06384277343744)");
+  
                    break;
                    dafaul:break;
                   
@@ -108,8 +116,6 @@ $(document).ready(function(){
       
       
      });//click func
-
-      
      
  function getAllIndexes(arr, val) {
         var indexes = [], i;
@@ -120,8 +126,21 @@ $(document).ready(function(){
     }
 
 
+$("#new-link").click(function(){
+    
+    var okOption = confirm("New Game?");
+    if (okOption == true) {
+     location.reload();
+    } 
+})
 
-
+$("#home-link").click(function(){
+    
+    var okOption = confirm("End Game?");
+    if (okOption == true) {
+        window.location.href = "/html/home.html";
+    } 
+})
 
     
     });//ready func
