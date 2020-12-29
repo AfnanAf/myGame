@@ -1,15 +1,31 @@
+
+@import url('https://fonts.google.com/specimen/Bungee+Shade#standard-styles');
+
+@font-face {
+    src:  url(/fonts/Bungee_Inline/BungeeInline-Regular.ttf);
+    font-family: 'Bungee_Inline';
+  }
+
+  @font-face {
+    src:  url(/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+    font-family: 'Bungee_Shade';
+  }
+
 body{
     background-image: url(/images/background-3.jpg);
     background-size:cover;
+    font-family: sans-serif;
 }
-h5{
+h4{
     margin-right: 30px;
+    font-family: 'Bungee_Inline';
+
 }
 .game-container{
     background-color: white;
     margin: auto;
     width: 70%;
-    height:800px;
+    height:900px;
     margin-top: 80px;
     display: flex;
    flex-direction: column;
@@ -20,9 +36,10 @@ h5{
     border: 5px solid rgb(82, 38, 38);
     border-radius: 15px;
     box-shadow: 5px 5px 8px rgb(247, 243, 243);
+    height: 600px;
 }
 .letters-container, .img-word-container{
-    background-color: rgb(173, 162, 162);
+    background-color: white;
     border: 1px solid black;
     width: 1180px;
     height: 390px;
@@ -32,31 +49,32 @@ h5{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-
 }
 svg{
     height: 400px;
 }
 .letters-container{
-   /* float: left; */
   padding: 70px 50px;
-    display:inline-block; 
+    display:inline;
     flex-direction: row;
     justify-content:space-around;
-     align-items: center;
+    align-items: center;
+    height: 200px;
      
 }
+
 .letter{
     width: 50px;
     height: 50px;
     float: left;
     background-color: white;
-    border: 1px solid black;
+    border: 3px solid black;
     text-align: center;
     font-size: 28px;
     margin: 5px 5px;
     font-weight: 600;
-   
+    font-family: 'Bungee_Shade';
+
    
 }
 .svg-container{
@@ -84,7 +102,9 @@ svg{
 }
 .container h1{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    font-family: 'Bungee_Shade';
+    font-size: 50px;
 }
 .container label{
     
@@ -97,13 +117,13 @@ svg{
   
 }
 input{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-.container button{
+.container input[type=submit]{
     display: block;
     margin-left: 280px;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 150px;
     height: 30px;
     font-size: 18px;
