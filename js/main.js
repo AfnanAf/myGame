@@ -14,7 +14,7 @@ $(document).ready(function () {
     //appending num of divs depending on how many letters in the secret word
     for (let i = 0; i < secretWordLength; i++) {
         $(".secret-word-container").append("<div class='secret-letter " + i + "'></div>");
-        $(".secret-letter").addClass("secret-letter");
+       
     }
 
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
     var pressedLetter = 0;// the letter witch the Player has pressed
     $(".letters-container div").on('click', function () {
 
-        pressedLetter = $(this).attr('id');
+        pressedLetter = $(this).attr('id');//ex: A
 
         if (secretWordLettersList.includes(pressedLetter, 0)) {
 
@@ -30,7 +30,6 @@ $(document).ready(function () {
             for (let i = 0; i < arrOfIndexes.length; i++) {
                 $("." + arrOfIndexes[i] + "").text(pressedLetter);
             }
-            winCheck();
             $(this).css("color","green");
         } else {
             failurse++;
@@ -148,7 +147,7 @@ $(document).ready(function () {
 
             }
            
-        } else if (failurse >= 7 && $(".secret-word-container").children("div:not(:empty)").length <= secretWordLength) {
+        } else if (failurse == 7 && $(".secret-word-container").children("div:not(:empty)").length < secretWordLength) {
             var failAudio = new Audio('../audio/Sad_Trombone-Joe_Lamb-665429450.mp3');
             failAudio.play();
             option = alert("Unfortunately " + window.location.search.substring(12) + " , You lost :( "+"\n The word is "+secretWord);
