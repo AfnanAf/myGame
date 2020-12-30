@@ -2,17 +2,17 @@
 @import url('https://fonts.google.com/specimen/Bungee+Shade#standard-styles');
 
 @font-face {
-    src:  url(/fonts/Bungee_Inline/BungeeInline-Regular.ttf);
+    src:  url(../fonts/Bungee_Inline/BungeeInline-Regular.ttf);
     font-family: 'Bungee_Inline';
   }
 
   @font-face {
-    src:  url(/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+    src:  url(../fonts/Bungee_Shade/BungeeShade-Regular.ttf);
     font-family: 'Bungee_Shade';
   }
 
 body{
-    background-image: url(/images/background-3.jpg);
+    background-image: url(../images/background-3.jpg);
     background-size:cover;
     font-family: sans-serif;
 }
