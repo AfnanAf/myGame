@@ -1,16 +1,12 @@
 var foodList = ['APPLE', 'ORANGE', 'BANANA', 'STRAWBERRY', 'POMEGRANATE', 'MANGO', 'GRAPE', 'PINEAPPLE','BLUEBERRY','AVOCADO','BLACKBERRY','CHERRY','GRAPEFRUIT','KIWI','PAPAYA','PEACH','WATERMELON'];
 
-var secretWordIndex = Math.floor(Math.random() * foodList.length - 1) + 0;
-console.log("index " + secretWordIndex);//1
+var secretWordIndex = Math.floor(Math.random() * foodList.length - 1) + 0;//ex: 1
 
-var secretWord = foodList[secretWordIndex];
-console.log("secretWord " + secretWord);//ORANGE
+var secretWord = foodList[secretWordIndex];//ex: ORANGE
 
-var secretWordLettersList = secretWord.split("");//[O,R,A,N,G,E]
-console.log("secretWordLettersList " + secretWordLettersList);
+var secretWordLettersList = secretWord.split("");//ex: [O,R,A,N,G,E]
 
-var secretWordLength = secretWordLettersList.length;
-console.log("length " + secretWordLength);//6
+var secretWordLength = secretWordLettersList.length;//6
 
 $(document).ready(function () {
     var failurse = 0;
@@ -136,7 +132,7 @@ $(document).ready(function () {
 
         var okOption = confirm("End Game?");
         if (okOption == true) {
-            window.location.href = "/html/home.html";
+            window.location.href = "../html/home.html";
         }
     })
     function winCheck() {
@@ -144,7 +140,7 @@ $(document).ready(function () {
         var option;
 
         if (failurse < 7 && $(".secret-word-container").children("div:not(:empty)").length == secretWordLength) {
-            var winAudio = new Audio('/audio/Ta Da-SoundBible.com-1884170640.mp3');
+            var winAudio = new Audio('../audio/Ta Da-SoundBible.com-1884170640.mp3');
             winAudio.play();
             option = alert("Congratulations " + window.location.search.substring(12) + " , You won!");
             if (option == true) {
@@ -153,7 +149,7 @@ $(document).ready(function () {
             }
            
         } else if (failurse >= 7 && $(".secret-word-container").children("div:not(:empty)").length <= secretWordLength) {
-            var failAudio = new Audio('/audio/Sad_Trombone-Joe_Lamb-665429450.mp3');
+            var failAudio = new Audio('../audio/Sad_Trombone-Joe_Lamb-665429450.mp3');
             failAudio.play();
             option = alert("Unfortunately " + window.location.search.substring(12) + " , You lost :( "+"\n The word is "+secretWord);
             if (option == true) {
