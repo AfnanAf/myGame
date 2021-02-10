@@ -7,6 +7,7 @@
 * GitHub & Git Bash
 * Google Fonts
 * Flaticon
+
 ## Wireframes:
 ![Wireframe](/images/wireframe.jpg)
 ## User stories:
@@ -27,17 +28,21 @@ The player should guess the letters of the secret word correctly before the man 
 ## Favorite functions:
 winCheck() function, it checks weather the Player is win or lose the game by cheking if the number of correctly guessed letters is equal to the secret word length and the number of wrongly guessed letters less than 7; the Player win the game and wining message will appear. Otherwise the Player will lose and losing message will appear.
 ```javascript
-  var option;
+    var option;
 
         if (failurse < 7 && $(".secret-word-container").children("div:not(:empty)").length == secretWordLength) {
+            var winAudio = new Audio('../audio/Ta Da-SoundBible.com-1884170640.mp3');
+            winAudio.play();
             option = alert("Congratulations " + window.location.search.substring(12) + " , You won!");
             if (option == true) {
                 location.reload();
 
             }
-        } else if (failurse >= 7 && $(".secret-word-container").children("div:not(:empty)").length <= secretWordLength) {
-            console.log(failurse);
-            option = alert("Unfortunately " + window.location.search.substring(12) + " , You lost :( ");
+           
+        } else if (failurse == 7 && $(".secret-word-container").children("div:not(:empty)").length < secretWordLength) {
+            var failAudio = new Audio('../audio/Sad_Trombone-Joe_Lamb-665429450.mp3');
+            failAudio.play();
+            option = alert("Unfortunately " + window.location.search.substring(12) + " , You lost :( "+"\n The word is "+secretWord);
             if (option == true) {
                 location.reload();
             }
